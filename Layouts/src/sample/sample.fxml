@@ -1,0 +1,43 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.layout.ColumnConstraints?>
+
+
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="10"/>
+    </padding>
+    <!--<columnConstraints>-->
+    <!--<ColumnConstraints percentWidth="50"/>-->
+    <!--<ColumnConstraints percentWidth="50"/>-->
+    <!--<ColumnConstraints percentWidth="50"/>-->
+    <!--</columnConstraints>-->
+    <Label fx:id="nameLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="0" onKeyPressed="#onKeyPressed"/>
+    <Button fx:id="nameButton" text="Button One" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#onButtonClicked"/>
+    <!--<Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+    <!--<Button text="Button Three" GridPane.rowIndex="0" GridPane.columnIndex="2"/>-->
+    <!--<Button text="Really Long Button Four" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
+    <!--<Button text="Button Five" GridPane.rowIndex="1" GridPane.columnIndex="1"/>-->
+</GridPane>
+
+        <!--<?import javafx.scene.layout.HBox?>-->
+        <!--<?import javafx.scene.control.TextField?>-->
+        <!--<HBox fx:controller="sample.Controller"-->
+        <!--xmlns:fx="http://javafx.com/fxml" alignment="bottom_right"-->
+        <!--style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"-->
+        <!--spacing="10">-->
+        <!--<padding>-->
+        <!--<Insets bottom="10" right="10"/>-->
+        <!--</padding>-->
+        <!---->
+        <!--<Button text="Okay" prefWidth="90"/>-->
+        <!--<Button text="Cancel" prefWidth="90"/>-->
+        <!--<Button text="Help" prefWidth="90" onAction="#onButtonClicked"/>-->
+        <!--</HBox>-->
